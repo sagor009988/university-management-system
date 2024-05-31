@@ -3,10 +3,9 @@ import { studentController } from './student.controller';
 
 const router = express.Router();
 
-// will call a controller
-router.post('/create-student', studentController.createStudent);
-
+router.post('/api/v1');
 // get data
+
 router.get('/', studentController.getAllStudents);
 
 router.get('/:studentId', studentController.getSingleStudent);
